@@ -30,23 +30,6 @@ const App: FC<{ folders?: any[]; activeFolder?: any; activeDoc?: any; activeDocs
     return null
   }
 
-  if (false) {
-    return (
-      <Dialog
-        isShown
-        title="Session expired"
-        confirmLabel="Ok"
-        hasCancel={false}
-        hasClose={false}
-        shouldCloseOnOverlayClick={false}
-        shouldCloseOnEscapePress={false}
-        onConfirm={() => router.push('/signin')}
-      >
-        Sign in to continue
-      </Dialog>
-    )
-  }
-
   return (
     <Pane position="relative">
       <Pane width={300} position="absolute" top={0} left={0} background="tint2" height="100vh" borderRight>
